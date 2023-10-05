@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <header>
+     
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="/Index">Learning</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="" id="homeContainer"><a href="/Index" id="homeLink">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-area="" asp-page="/Index">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                                <li><a href="#">Page 3</a></li>
+                            </ul>
+                        </li>
+                        <li id="privacyContainer"><a href="/Privacy">Privacy</a></li>
+                        <li id="clientsContainer"><a class="text-dark" asp-area="" asp-page="/Clients/Index">Clients</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="profileContainer"><a  href="/Account/Profile" ><span class="glyphicon glyphicon-user"></span> Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - MyStore - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>*@
+
+</body>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+</html>
